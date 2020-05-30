@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: microservicio-datum-5
+  labels:
+    app: microservicio-datum-5   
+spec:
+  ports:
+  - name: http
+    port: 8080
+  selector:
+    app: microservicio-datum-5
